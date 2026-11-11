@@ -1,0 +1,10 @@
+short.txt
+long.txt
+hello
+1234567890
+12345678901
+operating systems
+
+Hello OS
+abcdefghij
+abcdefghijk

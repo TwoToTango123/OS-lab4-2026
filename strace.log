@@ -1,0 +1,415 @@
+37094 19:43:30.609198 execve("./build/parent", ["./build/parent"], 0x7ffef0c08858 /* 24 vars */) = 0
+37094 19:43:30.609979 brk(NULL)         = 0x5dad1b60c000
+37094 19:43:30.610196 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x781b89604000
+37094 19:43:30.610513 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+37094 19:43:30.610755 openat(AT_FDCWD</home/konstsmir/os_labs/lab4>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+37094 19:43:30.611273 fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=136503, ...}) = 0
+37094 19:43:30.611480 mmap(NULL, 136503, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x781b895e2000
+37094 19:43:30.611574 close(3</etc/ld.so.cache>) = 0
+37094 19:43:30.611738 openat(AT_FDCWD</home/konstsmir/os_labs/lab4>, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</usr/lib/x86_64-linux-gnu/libc.so.6>
+37094 19:43:30.611849 read(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0@\0\0\0\0\0\0\0\20n \0\0\0\0\0\0\0\0\0@\08\0\16\0@\0@\0?\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\34\0\0\0\0\0\0\0"..., 832) = 832
+37094 19:43:30.611990 pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\220s\2\0\0\0\0\0\220s\2\0\0\0\0\0"..., 784, 64) = 784
+37094 19:43:30.612178 fstat(3</usr/lib/x86_64-linux-gnu/libc.so.6>, {st_mode=S_IFREG|0755, st_size=2129424, ...}) = 0
+37094 19:43:30.612264 pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\220s\2\0\0\0\0\0\220s\2\0\0\0\0\0"..., 784, 64) = 784
+37094 19:43:30.612380 mmap(NULL, 2174352, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0) = 0x781b89200000
+37094 19:43:30.612505 mmap(0x781b89228000, 1609728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x28000) = 0x781b89228000
+37094 19:43:30.612637 mmap(0x781b893b1000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x1b1000) = 0x781b893b1000
+37094 19:43:30.612753 mmap(0x781b89400000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x1ff000) = 0x781b89400000
+37094 19:43:30.612923 mmap(0x781b89406000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x781b89406000
+37094 19:43:30.613019 close(3</usr/lib/x86_64-linux-gnu/libc.so.6>) = 0
+37094 19:43:30.613106 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x781b895df000
+37094 19:43:30.613204 arch_prctl(ARCH_SET_FS, 0x781b895df740) = 0
+37094 19:43:30.613337 set_tid_address(0x781b895dfa10) = 37094
+37094 19:43:30.613441 set_robust_list(0x781b895dfa20, 24) = 0
+37094 19:43:30.613585 rseq(0x781b895e0060, 0x20, 0, 0x53053053) = 0
+37094 19:43:30.613787 mprotect(0x781b89400000, 16384, PROT_READ) = 0
+37094 19:43:30.613933 mprotect(0x5dacef714000, 4096, PROT_READ) = 0
+37094 19:43:30.614083 mprotect(0x781b8963c000, 8192, PROT_READ) = 0
+37094 19:43:30.614214 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+37094 19:43:30.614397 munmap(0x781b895e2000, 136503) = 0
+37094 19:43:30.614494 getpid()          = 37094
+37094 19:43:30.614608 write(1</dev/null<char 1:3>>, "parent: PID=37094\n", 18) = 18
+37094 19:43:30.614725 write(1</dev/null<char 1:3>>, "File for child1 (length <= 10):", 31) = 31
+37094 19:43:30.614841 write(1</dev/null<char 1:3>>, "\n", 1) = 1
+37094 19:43:30.614937 getrandom("\xae\xf1\xb8\xec\xe1\xad\x88\xeb", 8, GRND_NONBLOCK) = 8
+37094 19:43:30.615063 brk(NULL)         = 0x5dad1b60c000
+37094 19:43:30.615192 brk(0x5dad1b62d000) = 0x5dad1b62d000
+37094 19:43:30.615289 fstat(0</home/konstsmir/os_labs/lab4/input.txt>, {st_mode=S_IFREG|0644, st_size=99, ...}) = 0
+37094 19:43:30.615402 read(0</home/konstsmir/os_labs/lab4/input.txt>, "short.txt\nlong.txt\nhello\n1234567890\n12345678901\noperating systems\n\nHello OS\nabcdefghij\nabcdefghijk\n", 4096) = 99
+37094 19:43:30.615573 write(1</dev/null<char 1:3>>, "File for child2 (length > 10):", 30) = 30
+37094 19:43:30.615695 write(1</dev/null<char 1:3>>, "\n", 1) = 1
+37094 19:43:30.615784 openat(AT_FDCWD</home/konstsmir/os_labs/lab4>, "short.txt", O_WRONLY|O_CREAT, 0644) = 3</home/konstsmir/os_labs/lab4/short.txt>
+37094 19:43:30.615934 fstat(3</home/konstsmir/os_labs/lab4/short.txt>, {st_mode=S_IFREG|0644, st_size=38, ...}) = 0
+37094 19:43:30.616085 openat(AT_FDCWD</home/konstsmir/os_labs/lab4>, "long.txt", O_WRONLY|O_CREAT, 0644) = 4</home/konstsmir/os_labs/lab4/long.txt>
+37094 19:43:30.616193 fstat(4</home/konstsmir/os_labs/lab4/long.txt>, {st_mode=S_IFREG|0644, st_size=42, ...}) = 0
+37094 19:43:30.616294 ftruncate(3</home/konstsmir/os_labs/lab4/short.txt>, 0) = 0
+37094 19:43:30.616500 openat(AT_FDCWD</home/konstsmir/os_labs/lab4>, "/tmp/lab4-RyBJDL", O_RDWR|O_CREAT|O_EXCL, 0600) = 5</tmp/lab4-RyBJDL>
+37094 19:43:30.616711 unlink("/tmp/lab4-RyBJDL") = 0
+37094 19:43:30.616845 ftruncate(4</home/konstsmir/os_labs/lab4/long.txt>, 0) = 0
+37094 19:43:30.617023 openat(AT_FDCWD</home/konstsmir/os_labs/lab4>, "/tmp/lab4-mIRmqS", O_RDWR|O_CREAT|O_EXCL, 0600) = 6</tmp/lab4-mIRmqS>
+37094 19:43:30.617207 unlink("/tmp/lab4-mIRmqS") = 0
+37094 19:43:30.617352 rt_sigprocmask(SIG_BLOCK, [USR1 USR2 CHLD], NULL, 8) = 0
+37094 19:43:30.617573 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x781b895dfa10) = 37095
+37094 19:43:30.618017 write(1</dev/null<char 1:3>>, "parent: started child1, PID=37095\n", 34 <unfinished ...>
+37095 19:43:30.618108 set_robust_list(0x781b895dfa20, 24 <unfinished ...>
+37094 19:43:30.618182 <... write resumed>) = 34
+37095 19:43:30.618240 <... set_robust_list resumed>) = 0
+37094 19:43:30.618262 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+37095 19:43:30.618320 dup2(3</home/konstsmir/os_labs/lab4/short.txt>, 1</dev/null<char 1:3>>) = 1</home/konstsmir/os_labs/lab4/short.txt>
+37095 19:43:30.618482 close(3</home/konstsmir/os_labs/lab4/short.txt> <unfinished ...>
+37094 19:43:30.618506 <... clone resumed>, child_tidptr=0x781b895dfa10) = 37096
+37094 19:43:30.618567 write(1</dev/null<char 1:3>>, "parent: started child2, PID=37096\n", 34 <unfinished ...>
+37096 19:43:30.618593 set_robust_list(0x781b895dfa20, 24 <unfinished ...>
+37095 19:43:30.618600 <... close resumed>) = 0
+37094 19:43:30.618634 <... write resumed>) = 34
+37096 19:43:30.618655 <... set_robust_list resumed>) = 0
+37095 19:43:30.618669 close(4</home/konstsmir/os_labs/lab4/long.txt> <unfinished ...>
+37094 19:43:30.618761 ftruncate(5</tmp/lab4-RyBJDL>(deleted), 21 <unfinished ...>
+37096 19:43:30.618799 dup2(4</home/konstsmir/os_labs/lab4/long.txt>, 1</dev/null<char 1:3>> <unfinished ...>
+37095 19:43:30.618849 <... close resumed>) = 0
+37094 19:43:30.618856 <... ftruncate resumed>) = 0
+37094 19:43:30.618926 mmap(NULL, 21, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0 <unfinished ...>
+37096 19:43:30.619074 <... dup2 resumed>) = 1</home/konstsmir/os_labs/lab4/long.txt>
+37095 19:43:30.619099 close(6</tmp/lab4-mIRmqS>(deleted) <unfinished ...>
+37094 19:43:30.619145 <... mmap resumed>) = 0x781b89603000
+37096 19:43:30.619189 close(3</home/konstsmir/os_labs/lab4/short.txt> <unfinished ...>
+37094 19:43:30.619225 munmap(0x781b89603000, 21 <unfinished ...>
+37095 19:43:30.619236 <... close resumed>) = 0
+37096 19:43:30.619250 <... close resumed>) = 0
+37094 19:43:30.619331 <... munmap resumed>) = 0
+37096 19:43:30.619352 close(4</home/konstsmir/os_labs/lab4/long.txt> <unfinished ...>
+37095 19:43:30.619364 getppid( <unfinished ...>
+37094 19:43:30.619410 kill(37095, SIGUSR1 <unfinished ...>
+37096 19:43:30.619448 <... close resumed>) = 0
+37095 19:43:30.619455 <... getppid resumed>) = 37094
+37094 19:43:30.619489 <... kill resumed>) = 0
+37096 19:43:30.619505 close(5</tmp/lab4-RyBJDL>(deleted) <unfinished ...>
+37095 19:43:30.619523 execve("/home/konstsmir/os_labs/lab4/build/child", ["child", "5", "37094", "1"], 0x7ffdfcc0ed08 /* 24 vars */ <unfinished ...>
+37094 19:43:30.619539 write(1</dev/null<char 1:3>>, "parent: 5 chars -> child1\n", 26 <unfinished ...>
+37096 19:43:30.619562 <... close resumed>) = 0
+37094 19:43:30.619582 <... write resumed>) = 26
+37094 19:43:30.619622 rt_sigtimedwait([USR2 CHLD],  <unfinished ...>
+37096 19:43:30.619637 getppid()         = 37094
+37096 19:43:30.619740 execve("/home/konstsmir/os_labs/lab4/build/child", ["child", "6", "37094", "2"], 0x7ffdfcc0ed08 /* 24 vars */ <unfinished ...>
+37095 19:43:30.619755 <... execve resumed>) = 0
+37095 19:43:30.619806 brk(NULL)         = 0x640056fb2000
+37096 19:43:30.619936 <... execve resumed>) = 0
+37095 19:43:30.619949 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+37096 19:43:30.619985 brk(NULL <unfinished ...>
+37095 19:43:30.619993 <... mmap resumed>) = 0x7ce2975a1000
+37096 19:43:30.620021 <... brk resumed>) = 0x57bd34d1b000
+37095 19:43:30.620034 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+37096 19:43:30.620107 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+37095 19:43:30.620120 openat(AT_FDCWD</home/konstsmir/os_labs/lab4>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+37096 19:43:30.620139 <... mmap resumed>) = 0x7da0ea2c3000
+37096 19:43:30.620171 access("/etc/ld.so.preload", R_OK <unfinished ...>
+37095 19:43:30.620180 <... openat resumed>) = 3</etc/ld.so.cache>
+37096 19:43:30.620207 <... access resumed>) = -1 ENOENT (No such file or directory)
+37095 19:43:30.620217 fstat(3</etc/ld.so.cache>,  <unfinished ...>
+37096 19:43:30.620250 openat(AT_FDCWD</home/konstsmir/os_labs/lab4>, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+37095 19:43:30.620275 <... fstat resumed>{st_mode=S_IFREG|0644, st_size=136503, ...}) = 0
+37096 19:43:30.620307 <... openat resumed>) = 3</etc/ld.so.cache>
+37095 19:43:30.620324 mmap(NULL, 136503, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0 <unfinished ...>
+37096 19:43:30.620363 fstat(3</etc/ld.so.cache>,  <unfinished ...>
+37095 19:43:30.620379 <... mmap resumed>) = 0x7ce29757f000
+37096 19:43:30.620414 <... fstat resumed>{st_mode=S_IFREG|0644, st_size=136503, ...}) = 0
+37095 19:43:30.620428 close(3</etc/ld.so.cache> <unfinished ...>
+37096 19:43:30.620441 mmap(NULL, 136503, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0 <unfinished ...>
+37095 19:43:30.620462 <... close resumed>) = 0
+37096 19:43:30.620498 <... mmap resumed>) = 0x7da0ea2a1000
+37095 19:43:30.620507 openat(AT_FDCWD</home/konstsmir/os_labs/lab4>, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+37096 19:43:30.620539 close(3</etc/ld.so.cache> <unfinished ...>
+37095 19:43:30.620550 <... openat resumed>) = 3</usr/lib/x86_64-linux-gnu/libc.so.6>
+37096 19:43:30.620580 <... close resumed>) = 0
+37095 19:43:30.620592 read(3</usr/lib/x86_64-linux-gnu/libc.so.6>,  <unfinished ...>
+37096 19:43:30.620625 openat(AT_FDCWD</home/konstsmir/os_labs/lab4>, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+37095 19:43:30.620639 <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0@\0\0\0\0\0\0\0\20n \0\0\0\0\0\0\0\0\0@\08\0\16\0@\0@\0?\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\34\0\0\0\0\0\0\0"..., 832) = 832
+37096 19:43:30.620678 <... openat resumed>) = 3</usr/lib/x86_64-linux-gnu/libc.so.6>
+37095 19:43:30.620692 pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>,  <unfinished ...>
+37096 19:43:30.620734 read(3</usr/lib/x86_64-linux-gnu/libc.so.6>,  <unfinished ...>
+37095 19:43:30.620747 <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\220s\2\0\0\0\0\0\220s\2\0\0\0\0\0"..., 784, 64) = 784
+37096 19:43:30.620775 <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0@\0\0\0\0\0\0\0\20n \0\0\0\0\0\0\0\0\0@\08\0\16\0@\0@\0?\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\34\0\0\0\0\0\0\0"..., 832) = 832
+37095 19:43:30.620787 fstat(3</usr/lib/x86_64-linux-gnu/libc.so.6>,  <unfinished ...>
+37096 19:43:30.620800 pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>,  <unfinished ...>
+37095 19:43:30.620818 <... fstat resumed>{st_mode=S_IFREG|0755, st_size=2129424, ...}) = 0
+37096 19:43:30.620835 <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\220s\2\0\0\0\0\0\220s\2\0\0\0\0\0"..., 784, 64) = 784
+37095 19:43:30.620855 pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>,  <unfinished ...>
+37096 19:43:30.620874 fstat(3</usr/lib/x86_64-linux-gnu/libc.so.6>,  <unfinished ...>
+37095 19:43:30.620900 <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\220s\2\0\0\0\0\0\220s\2\0\0\0\0\0"..., 784, 64) = 784
+37096 19:43:30.620927 <... fstat resumed>{st_mode=S_IFREG|0755, st_size=2129424, ...}) = 0
+37095 19:43:30.620953 mmap(NULL, 2174352, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0 <unfinished ...>
+37096 19:43:30.621011 pread64(3</usr/lib/x86_64-linux-gnu/libc.so.6>,  <unfinished ...>
+37095 19:43:30.621027 <... mmap resumed>) = 0x7ce297200000
+37096 19:43:30.621040 <... pread64 resumed>"\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\20\3\0\0\0\0\0\0\20\3\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\340w\35\0\0\0\0\0\34\0\0\0\0\0\0\0\34\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0\1\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\220s\2\0\0\0\0\0\220s\2\0\0\0\0\0"..., 784, 64) = 784
+37095 19:43:30.621056 mmap(0x7ce297228000, 1609728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x28000 <unfinished ...>
+37096 19:43:30.621103 mmap(NULL, 2174352, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0) = 0x7da0ea000000
+37095 19:43:30.621167 <... mmap resumed>) = 0x7ce297228000
+37096 19:43:30.621193 mmap(0x7da0ea028000, 1609728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x28000 <unfinished ...>
+37095 19:43:30.621206 mmap(0x7ce2973b1000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x1b1000 <unfinished ...>
+37096 19:43:30.621246 <... mmap resumed>) = 0x7da0ea028000
+37095 19:43:30.621255 <... mmap resumed>) = 0x7ce2973b1000
+37096 19:43:30.621298 mmap(0x7da0ea1b1000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x1b1000 <unfinished ...>
+37095 19:43:30.621335 mmap(0x7ce297400000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x1ff000 <unfinished ...>
+37096 19:43:30.621356 <... mmap resumed>) = 0x7da0ea1b1000
+37095 19:43:30.621375 <... mmap resumed>) = 0x7ce297400000
+37096 19:43:30.621406 mmap(0x7da0ea200000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</usr/lib/x86_64-linux-gnu/libc.so.6>, 0x1ff000 <unfinished ...>
+37095 19:43:30.621426 mmap(0x7ce297406000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+37096 19:43:30.621469 <... mmap resumed>) = 0x7da0ea200000
+37095 19:43:30.621478 <... mmap resumed>) = 0x7ce297406000
+37096 19:43:30.621528 mmap(0x7da0ea206000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+37095 19:43:30.621541 close(3</usr/lib/x86_64-linux-gnu/libc.so.6> <unfinished ...>
+37096 19:43:30.621566 <... mmap resumed>) = 0x7da0ea206000
+37095 19:43:30.621586 <... close resumed>) = 0
+37096 19:43:30.621616 close(3</usr/lib/x86_64-linux-gnu/libc.so.6> <unfinished ...>
+37095 19:43:30.621633 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+37096 19:43:30.621666 <... close resumed>) = 0
+37095 19:43:30.621696 <... mmap resumed>) = 0x7ce29757c000
+37096 19:43:30.621713 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7da0ea29e000
+37095 19:43:30.621753 arch_prctl(ARCH_SET_FS, 0x7ce29757c740 <unfinished ...>
+37096 19:43:30.621790 arch_prctl(ARCH_SET_FS, 0x7da0ea29e740 <unfinished ...>
+37095 19:43:30.621799 <... arch_prctl resumed>) = 0
+37096 19:43:30.621832 <... arch_prctl resumed>) = 0
+37095 19:43:30.621844 set_tid_address(0x7ce29757ca10 <unfinished ...>
+37096 19:43:30.621873 set_tid_address(0x7da0ea29ea10 <unfinished ...>
+37095 19:43:30.621884 <... set_tid_address resumed>) = 37095
+37096 19:43:30.621911 <... set_tid_address resumed>) = 37096
+37095 19:43:30.621920 set_robust_list(0x7ce29757ca20, 24 <unfinished ...>
+37096 19:43:30.621946 set_robust_list(0x7da0ea29ea20, 24 <unfinished ...>
+37095 19:43:30.621955 <... set_robust_list resumed>) = 0
+37096 19:43:30.621981 <... set_robust_list resumed>) = 0
+37095 19:43:30.621989 rseq(0x7ce29757d060, 0x20, 0, 0x53053053 <unfinished ...>
+37096 19:43:30.622017 rseq(0x7da0ea29f060, 0x20, 0, 0x53053053 <unfinished ...>
+37095 19:43:30.622026 <... rseq resumed>) = 0
+37096 19:43:30.622060 <... rseq resumed>) = 0
+37095 19:43:30.622125 mprotect(0x7ce297400000, 16384, PROT_READ <unfinished ...>
+37096 19:43:30.622136 mprotect(0x7da0ea200000, 16384, PROT_READ <unfinished ...>
+37095 19:43:30.622180 <... mprotect resumed>) = 0
+37096 19:43:30.622191 <... mprotect resumed>) = 0
+37096 19:43:30.622262 mprotect(0x57bd267f6000, 4096, PROT_READ <unfinished ...>
+37095 19:43:30.622298 mprotect(0x64002e24f000, 4096, PROT_READ <unfinished ...>
+37096 19:43:30.622350 <... mprotect resumed>) = 0
+37095 19:43:30.622363 <... mprotect resumed>) = 0
+37096 19:43:30.622401 mprotect(0x7da0ea2fb000, 8192, PROT_READ <unfinished ...>
+37095 19:43:30.622411 mprotect(0x7ce2975d9000, 8192, PROT_READ <unfinished ...>
+37096 19:43:30.622450 <... mprotect resumed>) = 0
+37095 19:43:30.622461 <... mprotect resumed>) = 0
+37096 19:43:30.622498 prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+37095 19:43:30.622509 prlimit64(0, RLIMIT_STACK, NULL,  <unfinished ...>
+37096 19:43:30.622591 <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+37095 19:43:30.622642 <... prlimit64 resumed>{rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+37096 19:43:30.622679 munmap(0x7da0ea2a1000, 136503 <unfinished ...>
+37095 19:43:30.622689 munmap(0x7ce29757f000, 136503 <unfinished ...>
+37096 19:43:30.622758 <... munmap resumed>) = 0
+37095 19:43:30.622789 <... munmap resumed>) = 0
+37095 19:43:30.622847 getpid()          = 37095
+37096 19:43:30.622953 getpid( <unfinished ...>
+37095 19:43:30.622973 write(2</dev/null<char 1:3>>, "child1: PID=37095, parent=37094\n", 32 <unfinished ...>
+37096 19:43:30.623008 <... getpid resumed>) = 37096
+37096 19:43:30.623049 write(2</dev/null<char 1:3>>, "child2: PID=37096, parent=37094\n", 32 <unfinished ...>
+37095 19:43:30.623074 <... write resumed>) = 32
+37096 19:43:30.623107 <... write resumed>) = 32
+37095 19:43:30.623122 rt_sigtimedwait([USR1],  <unfinished ...>
+37096 19:43:30.623155 rt_sigtimedwait([USR1],  <unfinished ...>
+37095 19:43:30.623176 <... rt_sigtimedwait resumed>{si_signo=SIGUSR1, si_code=SI_USER, si_pid=37094, si_uid=1000}, NULL, 8) = 10 (SIGUSR1)
+37095 19:43:30.623236 fstat(5</tmp/lab4-RyBJDL>(deleted), {st_mode=S_IFREG|0600, st_size=21, ...}) = 0
+37095 19:43:30.623332 mmap(NULL, 21, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0) = 0x7ce2975a0000
+37095 19:43:30.623455 write(1</home/konstsmir/os_labs/lab4/short.txt>, "olleh", 5) = 5
+37095 19:43:30.623572 write(1</home/konstsmir/os_labs/lab4/short.txt>, "\n", 1) = 1
+37095 19:43:30.623663 write(2</dev/null<char 1:3>>, "child1: processed 5 bytes\n", 26) = 26
+37095 19:43:30.623734 munmap(0x7ce2975a0000, 21) = 0
+37095 19:43:30.623807 kill(37094, SIGUSR2) = 0
+37094 19:43:30.623860 <... rt_sigtimedwait resumed>{si_signo=SIGUSR2, si_code=SI_USER, si_pid=37095, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+37095 19:43:30.623872 rt_sigtimedwait([USR1],  <unfinished ...>
+37094 19:43:30.623908 ftruncate(5</tmp/lab4-RyBJDL>(deleted), 26) = 0
+37094 19:43:30.624008 mmap(NULL, 26, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0) = 0x781b89603000
+37094 19:43:30.624097 munmap(0x781b89603000, 26) = 0
+37094 19:43:30.624206 kill(37095, SIGUSR1) = 0
+37095 19:43:30.624261 <... rt_sigtimedwait resumed>{si_signo=SIGUSR1, si_code=SI_USER, si_pid=37094, si_uid=1000}, NULL, 8) = 10 (SIGUSR1)
+37094 19:43:30.624279 write(1</dev/null<char 1:3>>, "parent: 10 chars -> child1\n", 27 <unfinished ...>
+37095 19:43:30.624307 fstat(5</tmp/lab4-RyBJDL>(deleted),  <unfinished ...>
+37094 19:43:30.624318 <... write resumed>) = 27
+37094 19:43:30.624348 rt_sigtimedwait([USR2 CHLD],  <unfinished ...>
+37095 19:43:30.624364 <... fstat resumed>{st_mode=S_IFREG|0600, st_size=26, ...}) = 0
+37095 19:43:30.624402 mmap(NULL, 26, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0) = 0x7ce2975a0000
+37095 19:43:30.624494 write(1</home/konstsmir/os_labs/lab4/short.txt>, "0987654321", 10) = 10
+37095 19:43:30.624579 write(1</home/konstsmir/os_labs/lab4/short.txt>, "\n", 1) = 1
+37095 19:43:30.624668 write(2</dev/null<char 1:3>>, "child1: processed 10 bytes\n", 27) = 27
+37095 19:43:30.624763 munmap(0x7ce2975a0000, 26) = 0
+37095 19:43:30.624850 kill(37094, SIGUSR2 <unfinished ...>
+37094 19:43:30.624908 <... rt_sigtimedwait resumed>{si_signo=SIGUSR2, si_code=SI_USER, si_pid=37095, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+37095 19:43:30.624940 <... kill resumed>) = 0
+37094 19:43:30.624977 ftruncate(6</tmp/lab4-mIRmqS>(deleted), 27 <unfinished ...>
+37095 19:43:30.624996 rt_sigtimedwait([USR1],  <unfinished ...>
+37094 19:43:30.625032 <... ftruncate resumed>) = 0
+37094 19:43:30.625068 mmap(NULL, 27, PROT_READ|PROT_WRITE, MAP_SHARED, 6</tmp/lab4-mIRmqS>(deleted), 0) = 0x781b89603000
+37094 19:43:30.625177 munmap(0x781b89603000, 27) = 0
+37094 19:43:30.625257 kill(37096, SIGUSR1) = 0
+37096 19:43:30.625319 <... rt_sigtimedwait resumed>{si_signo=SIGUSR1, si_code=SI_USER, si_pid=37094, si_uid=1000}, NULL, 8) = 10 (SIGUSR1)
+37094 19:43:30.625339 write(1</dev/null<char 1:3>>, "parent: 11 chars -> child2\n", 27 <unfinished ...>
+37096 19:43:30.625362 fstat(6</tmp/lab4-mIRmqS>(deleted),  <unfinished ...>
+37094 19:43:30.625378 <... write resumed>) = 27
+37096 19:43:30.625420 <... fstat resumed>{st_mode=S_IFREG|0600, st_size=27, ...}) = 0
+37094 19:43:30.625460 rt_sigtimedwait([USR2 CHLD],  <unfinished ...>
+37096 19:43:30.625470 mmap(NULL, 27, PROT_READ|PROT_WRITE, MAP_SHARED, 6</tmp/lab4-mIRmqS>(deleted), 0) = 0x7da0ea2c2000
+37096 19:43:30.625576 write(1</home/konstsmir/os_labs/lab4/long.txt>, "10987654321", 11) = 11
+37096 19:43:30.625710 write(1</home/konstsmir/os_labs/lab4/long.txt>, "\n", 1) = 1
+37096 19:43:30.625884 write(2</dev/null<char 1:3>>, "child2: processed 11 bytes\n", 27) = 27
+37096 19:43:30.625964 munmap(0x7da0ea2c2000, 27) = 0
+37096 19:43:30.626047 kill(37094, SIGUSR2 <unfinished ...>
+37094 19:43:30.626152 <... rt_sigtimedwait resumed>{si_signo=SIGUSR2, si_code=SI_USER, si_pid=37096, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+37096 19:43:30.626234 <... kill resumed>) = 0
+37094 19:43:30.626265 ftruncate(6</tmp/lab4-mIRmqS>(deleted), 33 <unfinished ...>
+37096 19:43:30.626314 rt_sigtimedwait([USR1],  <unfinished ...>
+37094 19:43:30.626344 <... ftruncate resumed>) = 0
+37094 19:43:30.626423 mmap(NULL, 33, PROT_READ|PROT_WRITE, MAP_SHARED, 6</tmp/lab4-mIRmqS>(deleted), 0) = 0x781b89603000
+37094 19:43:30.626509 munmap(0x781b89603000, 33) = 0
+37094 19:43:30.626591 kill(37096, SIGUSR1) = 0
+37096 19:43:30.626760 <... rt_sigtimedwait resumed>{si_signo=SIGUSR1, si_code=SI_USER, si_pid=37094, si_uid=1000}, NULL, 8) = 10 (SIGUSR1)
+37094 19:43:30.626805 write(1</dev/null<char 1:3>>, "parent: 17 chars -> child2\n", 27 <unfinished ...>
+37096 19:43:30.626841 fstat(6</tmp/lab4-mIRmqS>(deleted),  <unfinished ...>
+37094 19:43:30.626850 <... write resumed>) = 27
+37096 19:43:30.626863 <... fstat resumed>{st_mode=S_IFREG|0600, st_size=33, ...}) = 0
+37094 19:43:30.626874 rt_sigtimedwait([USR2 CHLD],  <unfinished ...>
+37096 19:43:30.626902 mmap(NULL, 33, PROT_READ|PROT_WRITE, MAP_SHARED, 6</tmp/lab4-mIRmqS>(deleted), 0) = 0x7da0ea2c2000
+37096 19:43:30.627011 write(1</home/konstsmir/os_labs/lab4/long.txt>, "smetsys gnitarepo", 17) = 17
+37096 19:43:30.627108 write(1</home/konstsmir/os_labs/lab4/long.txt>, "\n", 1) = 1
+37096 19:43:30.627237 write(2</dev/null<char 1:3>>, "child2: processed 17 bytes\n", 27) = 27
+37096 19:43:30.627340 munmap(0x7da0ea2c2000, 33) = 0
+37096 19:43:30.627428 kill(37094, SIGUSR2 <unfinished ...>
+37094 19:43:30.627471 <... rt_sigtimedwait resumed>{si_signo=SIGUSR2, si_code=SI_USER, si_pid=37096, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+37096 19:43:30.627490 <... kill resumed>) = 0
+37094 19:43:30.627517 ftruncate(5</tmp/lab4-RyBJDL>(deleted), 16 <unfinished ...>
+37096 19:43:30.627532 rt_sigtimedwait([USR1],  <unfinished ...>
+37094 19:43:30.627567 <... ftruncate resumed>) = 0
+37094 19:43:30.627596 mmap(NULL, 16, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0) = 0x781b89603000
+37094 19:43:30.627676 munmap(0x781b89603000, 16) = 0
+37094 19:43:30.627752 kill(37095, SIGUSR1) = 0
+37095 19:43:30.627813 <... rt_sigtimedwait resumed>{si_signo=SIGUSR1, si_code=SI_USER, si_pid=37094, si_uid=1000}, NULL, 8) = 10 (SIGUSR1)
+37094 19:43:30.627833 write(1</dev/null<char 1:3>>, "parent: 0 chars -> child1\n", 26 <unfinished ...>
+37095 19:43:30.627856 fstat(5</tmp/lab4-RyBJDL>(deleted),  <unfinished ...>
+37094 19:43:30.627878 <... write resumed>) = 26
+37095 19:43:30.627900 <... fstat resumed>{st_mode=S_IFREG|0600, st_size=16, ...}) = 0
+37094 19:43:30.627915 rt_sigtimedwait([USR2 CHLD],  <unfinished ...>
+37095 19:43:30.627941 mmap(NULL, 16, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0) = 0x7ce2975a0000
+37095 19:43:30.628037 write(1</home/konstsmir/os_labs/lab4/short.txt>, "\n", 1) = 1
+37095 19:43:30.628142 write(2</dev/null<char 1:3>>, "child1: processed 0 bytes\n", 26) = 26
+37095 19:43:30.628236 munmap(0x7ce2975a0000, 16) = 0
+37095 19:43:30.628338 kill(37094, SIGUSR2 <unfinished ...>
+37094 19:43:30.628397 <... rt_sigtimedwait resumed>{si_signo=SIGUSR2, si_code=SI_USER, si_pid=37095, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+37095 19:43:30.628412 <... kill resumed>) = 0
+37094 19:43:30.628487 ftruncate(5</tmp/lab4-RyBJDL>(deleted), 24 <unfinished ...>
+37095 19:43:30.628554 rt_sigtimedwait([USR1],  <unfinished ...>
+37094 19:43:30.628588 <... ftruncate resumed>) = 0
+37094 19:43:30.628667 mmap(NULL, 24, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0) = 0x781b89603000
+37094 19:43:30.628763 munmap(0x781b89603000, 24) = 0
+37094 19:43:30.628851 kill(37095, SIGUSR1) = 0
+37095 19:43:30.628910 <... rt_sigtimedwait resumed>{si_signo=SIGUSR1, si_code=SI_USER, si_pid=37094, si_uid=1000}, NULL, 8) = 10 (SIGUSR1)
+37094 19:43:30.628930 write(1</dev/null<char 1:3>>, "parent: 8 chars -> child1\n", 26 <unfinished ...>
+37095 19:43:30.628953 fstat(5</tmp/lab4-RyBJDL>(deleted),  <unfinished ...>
+37094 19:43:30.628963 <... write resumed>) = 26
+37094 19:43:30.628995 rt_sigtimedwait([USR2 CHLD],  <unfinished ...>
+37095 19:43:30.629015 <... fstat resumed>{st_mode=S_IFREG|0600, st_size=24, ...}) = 0
+37095 19:43:30.629049 mmap(NULL, 24, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0) = 0x7ce2975a0000
+37095 19:43:30.629139 write(1</home/konstsmir/os_labs/lab4/short.txt>, "SO olleH", 8) = 8
+37095 19:43:30.629228 write(1</home/konstsmir/os_labs/lab4/short.txt>, "\n", 1) = 1
+37095 19:43:30.629309 write(2</dev/null<char 1:3>>, "child1: processed 8 bytes\n", 26) = 26
+37095 19:43:30.629399 munmap(0x7ce2975a0000, 24) = 0
+37095 19:43:30.629506 kill(37094, SIGUSR2 <unfinished ...>
+37094 19:43:30.629560 <... rt_sigtimedwait resumed>{si_signo=SIGUSR2, si_code=SI_USER, si_pid=37095, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+37095 19:43:30.629599 <... kill resumed>) = 0
+37094 19:43:30.629613 ftruncate(5</tmp/lab4-RyBJDL>(deleted), 26 <unfinished ...>
+37095 19:43:30.629635 rt_sigtimedwait([USR1],  <unfinished ...>
+37094 19:43:30.629650 <... ftruncate resumed>) = 0
+37094 19:43:30.629733 mmap(NULL, 26, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0) = 0x781b89603000
+37094 19:43:30.629833 munmap(0x781b89603000, 26) = 0
+37094 19:43:30.629922 kill(37095, SIGUSR1) = 0
+37095 19:43:30.629985 <... rt_sigtimedwait resumed>{si_signo=SIGUSR1, si_code=SI_USER, si_pid=37094, si_uid=1000}, NULL, 8) = 10 (SIGUSR1)
+37094 19:43:30.630002 write(1</dev/null<char 1:3>>, "parent: 10 chars -> child1\n", 27 <unfinished ...>
+37095 19:43:30.630024 fstat(5</tmp/lab4-RyBJDL>(deleted),  <unfinished ...>
+37094 19:43:30.630034 <... write resumed>) = 27
+37094 19:43:30.630112 rt_sigtimedwait([USR2 CHLD],  <unfinished ...>
+37095 19:43:30.630127 <... fstat resumed>{st_mode=S_IFREG|0600, st_size=26, ...}) = 0
+37095 19:43:30.630177 mmap(NULL, 26, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0) = 0x7ce2975a0000
+37095 19:43:30.630286 write(1</home/konstsmir/os_labs/lab4/short.txt>, "jihgfedcba", 10) = 10
+37095 19:43:30.630390 write(1</home/konstsmir/os_labs/lab4/short.txt>, "\n", 1) = 1
+37095 19:43:30.630482 write(2</dev/null<char 1:3>>, "child1: processed 10 bytes\n", 27) = 27
+37095 19:43:30.630585 munmap(0x7ce2975a0000, 26) = 0
+37095 19:43:30.630663 kill(37094, SIGUSR2 <unfinished ...>
+37094 19:43:30.630726 <... rt_sigtimedwait resumed>{si_signo=SIGUSR2, si_code=SI_USER, si_pid=37095, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+37095 19:43:30.630757 <... kill resumed>) = 0
+37094 19:43:30.630793 ftruncate(6</tmp/lab4-mIRmqS>(deleted), 27 <unfinished ...>
+37095 19:43:30.630814 rt_sigtimedwait([USR1],  <unfinished ...>
+37094 19:43:30.630857 <... ftruncate resumed>) = 0
+37094 19:43:30.630890 mmap(NULL, 27, PROT_READ|PROT_WRITE, MAP_SHARED, 6</tmp/lab4-mIRmqS>(deleted), 0) = 0x781b89603000
+37094 19:43:30.630976 munmap(0x781b89603000, 27) = 0
+37094 19:43:30.631069 kill(37096, SIGUSR1) = 0
+37096 19:43:30.631144 <... rt_sigtimedwait resumed>{si_signo=SIGUSR1, si_code=SI_USER, si_pid=37094, si_uid=1000}, NULL, 8) = 10 (SIGUSR1)
+37094 19:43:30.631167 write(1</dev/null<char 1:3>>, "parent: 11 chars -> child2\n", 27 <unfinished ...>
+37096 19:43:30.631220 fstat(6</tmp/lab4-mIRmqS>(deleted),  <unfinished ...>
+37094 19:43:30.631244 <... write resumed>) = 27
+37096 19:43:30.631259 <... fstat resumed>{st_mode=S_IFREG|0600, st_size=27, ...}) = 0
+37094 19:43:30.631279 rt_sigtimedwait([USR2 CHLD],  <unfinished ...>
+37096 19:43:30.631296 mmap(NULL, 27, PROT_READ|PROT_WRITE, MAP_SHARED, 6</tmp/lab4-mIRmqS>(deleted), 0) = 0x7da0ea2c2000
+37096 19:43:30.631417 write(1</home/konstsmir/os_labs/lab4/long.txt>, "kjihgfedcba", 11) = 11
+37096 19:43:30.631614 write(1</home/konstsmir/os_labs/lab4/long.txt>, "\n", 1) = 1
+37096 19:43:30.631815 write(2</dev/null<char 1:3>>, "child2: processed 11 bytes\n", 27) = 27
+37096 19:43:30.631942 munmap(0x7da0ea2c2000, 27) = 0
+37096 19:43:30.632083 kill(37094, SIGUSR2 <unfinished ...>
+37094 19:43:30.632182 <... rt_sigtimedwait resumed>{si_signo=SIGUSR2, si_code=SI_USER, si_pid=37096, si_uid=1000}, NULL, 8) = 12 (SIGUSR2)
+37096 19:43:30.632202 <... kill resumed>) = 0
+37094 19:43:30.632253 read(0</home/konstsmir/os_labs/lab4/input.txt>,  <unfinished ...>
+37096 19:43:30.632293 rt_sigtimedwait([USR1],  <unfinished ...>
+37094 19:43:30.632347 <... read resumed>"", 4096) = 0
+37094 19:43:30.632418 ftruncate(5</tmp/lab4-RyBJDL>(deleted), 16) = 0
+37094 19:43:30.632547 mmap(NULL, 16, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0) = 0x781b89603000
+37094 19:43:30.632725 munmap(0x781b89603000, 16) = 0
+37094 19:43:30.632958 kill(37095, SIGUSR1) = 0
+37095 19:43:30.633174 <... rt_sigtimedwait resumed>{si_signo=SIGUSR1, si_code=SI_USER, si_pid=37094, si_uid=1000}, NULL, 8) = 10 (SIGUSR1)
+37094 19:43:30.633242 ftruncate(6</tmp/lab4-mIRmqS>(deleted), 16 <unfinished ...>
+37095 19:43:30.633290 fstat(5</tmp/lab4-RyBJDL>(deleted),  <unfinished ...>
+37094 19:43:30.633322 <... ftruncate resumed>) = 0
+37095 19:43:30.633336 <... fstat resumed>{st_mode=S_IFREG|0600, st_size=16, ...}) = 0
+37094 19:43:30.633358 mmap(NULL, 16, PROT_READ|PROT_WRITE, MAP_SHARED, 6</tmp/lab4-mIRmqS>(deleted), 0 <unfinished ...>
+37095 19:43:30.633378 mmap(NULL, 16, PROT_READ|PROT_WRITE, MAP_SHARED, 5</tmp/lab4-RyBJDL>(deleted), 0 <unfinished ...>
+37094 19:43:30.633399 <... mmap resumed>) = 0x781b89603000
+37095 19:43:30.633425 <... mmap resumed>) = 0x7ce2975a0000
+37094 19:43:30.633451 munmap(0x781b89603000, 16 <unfinished ...>
+37095 19:43:30.633469 munmap(0x7ce2975a0000, 16 <unfinished ...>
+37094 19:43:30.633541 <... munmap resumed>) = 0
+37095 19:43:30.633577 <... munmap resumed>) = 0
+37094 19:43:30.633594 kill(37096, SIGUSR1 <unfinished ...>
+37095 19:43:30.633608 close(5</tmp/lab4-RyBJDL>(deleted) <unfinished ...>
+37094 19:43:30.633684 <... kill resumed>) = 0
+37096 19:43:30.633700 <... rt_sigtimedwait resumed>{si_signo=SIGUSR1, si_code=SI_USER, si_pid=37094, si_uid=1000}, NULL, 8) = 10 (SIGUSR1)
+37095 19:43:30.633723 <... close resumed>) = 0
+37094 19:43:30.633737 wait4(37095,  <unfinished ...>
+37096 19:43:30.633753 fstat(6</tmp/lab4-mIRmqS>(deleted),  <unfinished ...>
+37095 19:43:30.633777 close(1</home/konstsmir/os_labs/lab4/short.txt> <unfinished ...>
+37096 19:43:30.633798 <... fstat resumed>{st_mode=S_IFREG|0600, st_size=16, ...}) = 0
+37095 19:43:30.633816 <... close resumed>) = 0
+37096 19:43:30.633831 mmap(NULL, 16, PROT_READ|PROT_WRITE, MAP_SHARED, 6</tmp/lab4-mIRmqS>(deleted), 0) = 0x7da0ea2c2000
+37095 19:43:30.633907 exit_group(0 <unfinished ...>
+37096 19:43:30.633958 munmap(0x7da0ea2c2000, 16 <unfinished ...>
+37095 19:43:30.633986 <... exit_group resumed>) = ?
+37096 19:43:30.634001 <... munmap resumed>) = 0
+37096 19:43:30.634060 close(6</tmp/lab4-mIRmqS>(deleted) <unfinished ...>
+37095 19:43:30.634209 +++ exited with 0 +++
+37096 19:43:30.634246 <... close resumed>) = 0
+37094 19:43:30.634265 <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 37095
+37096 19:43:30.634349 close(1</home/konstsmir/os_labs/lab4/long.txt> <unfinished ...>
+37094 19:43:30.634382 write(1</dev/null<char 1:3>>, "parent: child PID=37095, exit=0\n", 32 <unfinished ...>
+37096 19:43:30.634413 <... close resumed>) = 0
+37094 19:43:30.634430 <... write resumed>) = 32
+37096 19:43:30.634461 exit_group(0 <unfinished ...>
+37094 19:43:30.634524 close(5</tmp/lab4-RyBJDL>(deleted) <unfinished ...>
+37096 19:43:30.634555 <... exit_group resumed>) = ?
+37094 19:43:30.634616 <... close resumed>) = 0
+37094 19:43:30.634664 close(3</home/konstsmir/os_labs/lab4/short.txt> <unfinished ...>
+37096 19:43:30.634692 +++ exited with 0 +++
+37094 19:43:30.634887 <... close resumed>) = 0
+37094 19:43:30.634961 wait4(37096, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 37096
+37094 19:43:30.635126 write(1</dev/null<char 1:3>>, "parent: child PID=37096, exit=0\n", 32) = 32
+37094 19:43:30.635250 close(6</tmp/lab4-mIRmqS>(deleted)) = 0
+37094 19:43:30.635358 close(4</home/konstsmir/os_labs/lab4/long.txt>) = 0
+37094 19:43:30.635579 exit_group(0)     = ?
+37094 19:43:30.635748 +++ exited with 0 +++
